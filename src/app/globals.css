@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-slate-950 text-slate-100 text-xl;
+}
+
+input {
+  @apply px-4 text-slate-900;
+}
+
+button, button[type=submit], .btn {
+  @apply bg-rose-700 hover:bg-rose-500 py-3 px-4 rounded-md;
+}
+
+.btn-secondary {
+  @apply text-rose-500 border border-rose-500 hover:bg-slate-800 py-3 px-4 rounded-md;
+}
