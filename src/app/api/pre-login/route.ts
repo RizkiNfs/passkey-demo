@@ -21,7 +21,7 @@ export async function POST(request: Request) {
     
     const options = await generateAuthenticationOptions({
       userVerification: 'required',
-      rpID: 'localhost',
+      rpID: process.env.NEXT_PUBLIC_RP_ID as string,
       allowCredentials: passkeys.map(passkey => ({
         id: passkey.id,
         type: 'public-key',

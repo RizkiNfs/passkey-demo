@@ -23,8 +23,8 @@ export async function POST(request: Request) {
     
     const { verified, registrationInfo: info } = await verifyRegistrationResponse({
       response: credential,
-      expectedRPID: 'localhost',
-      expectedOrigin: 'http://localhost:3000',
+      expectedRPID: process.env.NEXT_PUBLIC_RP_ID as string,
+      expectedOrigin: process.env.NEXT_PUBLIC_ORIGIN as string,
       expectedChallenge: res.challenges as string,
       requireUserVerification: false,
     });

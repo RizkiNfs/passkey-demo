@@ -9,7 +9,7 @@ export async function POST(request: Request) {
    
     const body = await request.json()
     const options =  await generateRegistrationOptions({
-      rpID: 'localhost',
+      rpID: process.env.NEXT_PUBLIC_RP_ID as string,
       rpName: 'webauthn-demo',
       userName: body.username,
       attestationType: 'none',
