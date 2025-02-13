@@ -52,21 +52,21 @@ export default function Register(){
     <div className="max-w-sm mx-auto">
       <form autoComplete="off" className="flex flex-col gap-y-6" onSubmit={handleSubmit}>
         <div className="flex flex-col gap-y-2">
-          <label> username </label>
+          <label> Username </label>
           <input 
             className="h-10 rounded-md"
             name="username"
           />
         </div>
         <div className="flex flex-col gap-y-2">
-          <label> Hobi </label>
+          <label> Hobby </label>
           <input 
             className="h-10 rounded-md" 
             name="hobby"
           />
         </div>
         <button type="submit" disabled={loading}>
-          {loading ? '...Loading' : 'Daftar'}
+          {loading ? '...Loading' : 'Register'}
         </button>
       </form>
     </div>

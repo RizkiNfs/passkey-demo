@@ -17,7 +17,7 @@ export default async function Home() {
         <thead>
           <tr>
             <th className="p-4">Username</th>
-            <th className="p-4">Hobi</th>
+            <th className="p-4">Hobby</th>
           </tr>
         </thead>
         <tbody>
@@ -36,7 +36,7 @@ export default async function Home() {
   if(!token?.value) {
     return (
       <main className="max-w-screen-lg mx-auto">
-        <h2 className="mb-6">Login Terlebih dahalu untuk melihat data</h2>
+        <h2 className="mb-6">Login to see the data</h2>
         {renderTable({ className: 'blur-sm select-none'})}
       </main>
     )
@@ -47,7 +47,7 @@ export default async function Home() {
 
   return (
     <main className="max-w-screen-lg mx-auto">
-      <h2 className="mb-6">Selamat Datang</h2>
+      <h2 className="mb-6">Welcome</h2>
       {renderTable({ data: res })}
     </main>
   )

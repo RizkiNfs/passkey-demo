@@ -40,7 +40,7 @@ export default function RootLayout({
       {token?.value && (
         <form action={handleLogout}>
           <button type="submit">
-            Keluar
+            Logout
           </button>
         </form>
       )}
